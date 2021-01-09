@@ -8,16 +8,15 @@
 
     <TextView
         android:id="@+id/textView_Main_Judul"
-        android:layout_width="wrap_content"
+        style="@style/textView_Style3"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Resto Colabs Eat"
-        android:textColor="@android:color/holo_blue_light"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/textView_Main_Judul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -26,11 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Pilih Menu Makanan"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
+        android:text="@string/textView_Main_Sub1"
+        style="@style/textView_Style1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView_Main_Judul" />
 
@@ -47,37 +43,29 @@
             android:id="@+id/radioButton_Main_Opt1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Rendang"
-            android:textStyle="bold" />
+            style="@style/textView_Style2"
+            android:text="@string/txtrendang" />
 
         <RadioButton
             android:id="@+id/radioButton_Main_Opt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Ayam Bakar"
-            android:textStyle="bold" />
+            style="@style/textView_Style2"
+            android:text="@string/txtayam" />
 
         <RadioButton
             android:id="@+id/radioButton_Main_Opt3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Ikan Lele"
-            android:textStyle="bold" />
+            style="@style/textView_Style2"
+            android:text="@string/txtlele" />
 
         <RadioButton
             android:id="@+id/radioButton_Main_Opt4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Kikil"
-            android:textStyle="bold" />
+            style="@style/textView_Style2"
+            android:text="@string/txtkikil" />
     </RadioGroup>
 
     <TextView
@@ -86,11 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Pilih Level Pedas"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
+        android:text="@string/textView_Main_Sub2"
+        style="@style/textView_Style1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RadioGroup_Main_RG" />
 
@@ -121,11 +106,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Tambahan"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
+        android:text="@string/textView_Main_Sub3"
+        style="@style/textView_Style1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar_Main_Pedas" />
 
