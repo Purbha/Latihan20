@@ -1,17 +1,14 @@
-package com.ims.praktikum1;
+package com.ims.latihan20;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import com.ims.setting.Globalvar;
+
 public class ResultActivity extends AppCompatActivity {
 
-    TextView TV_Makanan;
-    TextView TV_Harga1;
-    TextView TV_Pedas;
-    TextView TV_Harga2;
-    TextView TV_Tambahan;
-    TextView TV_Total;
+    TextView TV_Makanan, TV_Harga1, TV_Pedas, TV_Harga2, TV_Tambahan, TV_Total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,19 +19,19 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     private void Inisial() {
-        TV_Makanan = (TextView) findViewById(R.id.textView_Result_Makananval);
-        TV_Harga1 = (TextView) findViewById(R.id.textView_Result_Harga1val);
-        TV_Pedas = (TextView) findViewById(R.id.textView_Result_Pedasval);
-        TV_Harga2 = (TextView) findViewById(R.id.textView_Result_Harga2val);
-        TV_Tambahan = (TextView) findViewById(R.id.textView_Result_Tambahanval);
-        TV_Total = (TextView) findViewById(R.id.textView_Result_Totalval);
+        TV_Makanan = findViewById(R.id.textView_Result_Makananval);
+        TV_Harga1 = findViewById(R.id.textView_Result_Harga1val);
+        TV_Pedas = findViewById(R.id.textView_Result_Pedasval);
+        TV_Harga2 = findViewById(R.id.textView_Result_Harga2val);
+        TV_Tambahan = findViewById(R.id.textView_Result_Tambahanval);
+        TV_Total = findViewById(R.id.textView_Result_Totalval);
     }
     private void Get_Var() {
         //Ambil data yang dikirim dari MainActivity
         Bundle bundle = getIntent().getExtras();
 
         //Cetak Nama Makanan
-        String Makanan = bundle.getString("Makanan");
+        String Makanan = bundle.getString(Globalvar.EXTRA_MAKANAN);
         TV_Makanan.setText(": " + Makanan);
 
         //Cetak Harga Makanan
@@ -42,18 +39,18 @@ public class ResultActivity extends AppCompatActivity {
         TV_Harga1.setText(": Rp " + String.format("%,2d",Harga1));
 
         //Cetak Nama Pedas
-        float Pedas = bundle.getFloat("Pedas");
+        float Pedas = bundle.getFloat(Globalvar.EXTRA_PEDAS);
         String Nama_Pedas = Level_Pedas(Pedas);
         TV_Pedas.setText(": " + Nama_Pedas);
 
         //Cetak Tambahan
-        boolean Nasi = bundle.getBoolean("chk1_val");
+        boolean Nasi = bundle.getBoolean(Globalvar.EXTRA_CHK1);
         int Harga_Nasi = Tambahan_Nasi(Nasi);
-        boolean Kerupuk = bundle.getBoolean("chk2_val");
+        boolean Kerupuk = bundle.getBoolean(Globalvar.EXTRA_CHK2);
         int Harga_Kerupuk = Tambahan_Kerupuk(Kerupuk);
-        boolean Lalapan = bundle.getBoolean("chk3_val");
+        boolean Lalapan = bundle.getBoolean(Globalvar.EXTRA_CHK3);
         int Harga_Lalapan = Tambahan_Lalapan(Lalapan);
-        boolean Sambel = bundle.getBoolean("chk4_val");
+        boolean Sambel = bundle.getBoolean(Globalvar.EXTRA_CHK4);
         int Harga_Sambel = Tambahan_Sambel(Sambel);
 
         //Cetak Tulisan Tambahan
@@ -72,11 +69,11 @@ public class ResultActivity extends AppCompatActivity {
     //Fungsi untuk menentukan harga makanan
     private int Harga_Makanan(String Nama) {
         int Harga = 0;
-        if(Nama.equals("Rendang")) {
+        if(Nama.equals(getString(R.string.txtrendang))) {
             Harga = 22000;
-        } else if(Nama.equals("Ikan Lele")) {
+        } else if(Nama.equals(getString(R.string.txtlele))) {
             Harga = 15000;
-        } else if(Nama.equals("Ayam Bakar")) {
+        } else if(Nama.equals(getString(R.string.txtayam))) {
             Harga = 18000;
         } else {
             Harga = 10000;

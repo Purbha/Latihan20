@@ -1,4 +1,4 @@
-package com.ims.praktikum1;
+package com.ims.latihan20;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,16 +11,15 @@ import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
+import com.ims.setting.Globalvar;
+
 public class MainActivity extends AppCompatActivity {
 
     RadioGroup Radio_RG;
     RadioButton Radio_RB;
     Button B_Submit;
     RatingBar RTB;
-    CheckBox Chk1;
-    CheckBox Chk2;
-    CheckBox Chk3;
-    CheckBox Chk4;
+    CheckBox Chk1, Chk2, Chk3, Chk4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Inisial() {
-        Radio_RG = (RadioGroup) findViewById(R.id.RadioGroup_Main_RG);
-        B_Submit = (Button) findViewById(R.id.button_Main_Submit);
-        RTB = (RatingBar) findViewById(R.id.ratingBar_Main_Pedas);
-        Chk1 = (CheckBox) findViewById(R.id.checkBox_Main_Chk1);
-        Chk2 = (CheckBox) findViewById(R.id.checkBox_Main_Chk2);
-        Chk3 = (CheckBox) findViewById(R.id.checkBox_Main_Chk3);
-        Chk4 = (CheckBox) findViewById(R.id.checkBox_Main_Chk4);
+        Radio_RG = findViewById(R.id.RadioGroup_Main_RG);
+        B_Submit = findViewById(R.id.button_Main_Submit);
+        RTB = findViewById(R.id.ratingBar_Main_Pedas);
+        Chk1 = findViewById(R.id.checkBox_Main_Chk1);
+        Chk2 = findViewById(R.id.checkBox_Main_Chk2);
+        Chk3 = findViewById(R.id.checkBox_Main_Chk3);
+        Chk4 = findViewById(R.id.checkBox_Main_Chk4);
     }
 
     private void Listen_B_Submit() {
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int Get_ID = Radio_RG.getCheckedRadioButtonId();
-                Radio_RB = (RadioButton) findViewById(Get_ID);
+                Radio_RB = findViewById(Get_ID);
                 if(Radio_RB == null){
                     Toast.makeText(MainActivity.this, "Silakan pilih makanan.", Toast.LENGTH_SHORT).show();
                     return;
@@ -57,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
                 boolean Chk3_Val = Chk3.isChecked();
                 boolean Chk4_Val = Chk4.isChecked();
                 Intent In = new Intent(MainActivity.this, ResultActivity.class);
-                In.putExtra("Makanan", Makanan);
-                In.putExtra("Pedas",Pedas);
-                In.putExtra("chk1_val",Chk1_Val);
-                In.putExtra("chk2_val",Chk2_Val);
-                In.putExtra("chk3_val",Chk3_Val);
-                In.putExtra("chk4_val",Chk4_Val);
+                In.putExtra(Globalvar.EXTRA_MAKANAN, Makanan);
+                In.putExtra(Globalvar.EXTRA_PEDAS,Pedas);
+                In.putExtra(Globalvar.EXTRA_CHK1,Chk1_Val);
+                In.putExtra(Globalvar.EXTRA_CHK2,Chk2_Val);
+                In.putExtra(Globalvar.EXTRA_CHK3,Chk3_Val);
+                In.putExtra(Globalvar.EXTRA_CHK4,Chk4_Val);
                 startActivity(In);
             }
         });

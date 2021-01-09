@@ -1,4 +1,4 @@
-package com.ims.praktikum1;
+package com.ims.latihan20;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
