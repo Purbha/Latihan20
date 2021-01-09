@@ -8,169 +8,181 @@
 
     <TextView
         android:id="@+id/textView_Result_Judul"
-        android:layout_width="wrap_content"
+        style="@style/textView_Style3"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Resto Colabs Eat"
-        android:textColor="@android:color/holo_blue_light"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/textView_Judul"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guideline_Result_Ver1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.3"
+        app:layout_constraintGuide_percent="0.4"
         />
 
     <TextView
         android:id="@+id/textView_Result_Makan"
-        android:layout_width="wrap_content"
+        style="@style/textView_Style1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Makanan"
-        android:textStyle="bold|italic"
+        android:layout_marginTop="8dp"
+        android:text="@string/textView_Result_Makan"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_Result_Ver1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView_Result_Judul" />
 
     <TextView
         android:id="@+id/textView_Result_Makananval"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="XXXXXXXXX"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dummy_Text"
+        style="@style/textView_Style2"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView_Result_Makan"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_Result_Ver1" />
 
     <TextView
         android:id="@+id/textView_Result_Harga1"
-        android:layout_width="wrap_content"
+        style="@style/textView_Style1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Harga Makanan"
-        android:textStyle="bold|italic"
+        android:layout_marginTop="8dp"
+        android:text="@string/textView_Result_Harga1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_Result_Ver1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Result_Makan" />
 
     <TextView
         android:id="@+id/textView_Result_Harga1val"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="999.999.999"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dummy_Number"
+        style="@style/textView_Style2"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView_Result_Harga1"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_Result_Ver1" />
 
     <TextView
         android:id="@+id/textView_Result_Pedas"
-        android:layout_width="wrap_content"
+        style="@style/textView_Style1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Level Pedas"
-        android:textStyle="bold|italic"
+        android:layout_marginTop="8dp"
+        android:text="@string/textView_Result_Pedas"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_Result_Ver1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Result_Harga1" />
 
     <TextView
         android:id="@+id/textView_Result_Pedasval"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="XXXXXXXXX"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dummy_Text"
+        style="@style/textView_Style2"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView_Result_Pedas"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_Result_Ver1" />
 
     <TextView
         android:id="@+id/textView_Result_Tambahan"
-        android:layout_width="wrap_content"
+        style="@style/textView_Style1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Tambahan"
-        android:textStyle="bold|italic"
+        android:layout_marginTop="8dp"
+        android:text="@string/textView_Result_Tambahan"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_Result_Ver1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Result_Pedas" />
 
     <TextView
         android:id="@+id/textView_Result_Tambahanval"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="XXXXXXXXX"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dummy_Text"
+        style="@style/textView_Style2"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView_Result_Tambahan"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_Result_Ver1" />
 
     <TextView
         android:id="@+id/textView_Result_Harga2"
-        android:layout_width="wrap_content"
+        style="@style/textView_Style1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Harga Tambahan"
-        android:textStyle="bold|italic"
+        android:layout_marginTop="8dp"
+        android:text="@string/textView_Result_Harga2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_Result_Ver1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Result_Tambahan" />
 
     <TextView
         android:id="@+id/textView_Result_Harga2val"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="999.999.999"
+        android:layout_marginEnd="16dp"
+        android:text="@string/dummy_Text"
+        style="@style/textView_Style2"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView_Result_Harga2"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_Result_Ver1" />
 
     <TextView
         android:id="@+id/textView_Result_Total"
-        android:layout_width="wrap_content"
+        style="@style/textView_Style1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Total"
-        android:textStyle="bold|italic"
+        android:layout_marginTop="8dp"
+        android:text="@string/textView_Result_Total"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_Result_Ver1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Result_Harga2" />
 
     <TextView
         android:id="@+id/textView_Result_Totalval"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="999.999.999"
+        android:text="@string/dummy_Number"
+        style="@style/textView_Style2"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView_Result_Total"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_Result_Ver1" />
 
     <TextView
         android:id="@+id/textView_Result_Thanks"
-        android:layout_width="wrap_content"
+        style="@style/textView_Style1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Terima kasih sudah makan di restoran kami. Mudah2an makanannya enak semua."
+        android:text="@string/textView_Result_Thanks"
         android:textAlignment="center"
-        android:textSize="18sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Result_Total" />

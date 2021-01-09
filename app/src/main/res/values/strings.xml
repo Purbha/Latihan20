@@ -1,12 +1,7 @@
 <resources>
+    <!--General-->
     <string name="app_name">Latihan 20</string>
     <string name="textView_Judul">Resto Colabs Eat</string>
-    <!--General-->
-
-    <!--Main Activity-->
-    <string name="textView_Main_Sub1">Pilih Menu Makanan</string>
-    <string name="textView_Main_Sub2">Pilih Level Pedas</string>
-    <string name="textView_Main_Sub3">Tambahan</string>
     <string name="txtrendang">Rendang</string>
     <string name="txtayam">Ayam Bakar</string>
     <string name="txtlele">Ikan Lele</string>
@@ -16,4 +11,20 @@
     <string name="txtlalapan">Lalapan</string>
     <string name="txtsambal">Sambal</string>
     <string name="button_Submit">Submit</string>
+    <string name="dummy_Text">XXXXXXXXXX</string>
+    <string name="dummy_Number">999999999</string>
+    <!--Main Activity-->
+    <string name="textView_Main_Sub1">Pilih Menu Makanan</string>
+    <string name="textView_Main_Sub2">Pilih Level Pedas</string>
+    <string name="textView_Main_Sub3">Tambahan</string>
+    <!--Result Activity-->
+    <string name="textView_Result_Makan">Makanan</string>
+    <string name="textView_Result_Harga1">Harga Makanan</string>
+    <string name="textView_Result_Pedas">Level Pedas</string>
+    <string name="textView_Result_Tambahan">Tambahan</string>
+    <string name="textView_Result_Harga2">Harga Tambahan</string>
+    <string name="textView_Result_Total">Total</string>
+    <string name="textView_Result_Thanks">
+        Terima kasih sudah makan di restoran kami. Mudah2an makanannya enak semua.
+    </string>
 </resources>
