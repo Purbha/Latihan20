@@ -10,21 +10,21 @@
 
     <style name="textView_Style1" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/DarkGreen</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 
     <style name="textView_Style2" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/SeaGreen</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 
     <style name="textView_Style3" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/DarkOliveGreen</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
@@ -32,7 +32,7 @@
     <style name="button_Style1" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/White</item>
         <item name="android:background">@color/ForestGreen</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold|italic</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>

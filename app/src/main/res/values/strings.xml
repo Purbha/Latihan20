@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Latihan 20</string>
-    <string name="textView_Main_Judul">Resto Colabs Eat</string>
+    <string name="textView_Judul">Resto Colabs Eat</string>
+    <!--General-->
+
+    <!--Main Activity-->
     <string name="textView_Main_Sub1">Pilih Menu Makanan</string>
     <string name="textView_Main_Sub2">Pilih Level Pedas</string>
     <string name="textView_Main_Sub3">Tambahan</string>
@@ -8,4 +11,9 @@
     <string name="txtayam">Ayam Bakar</string>
     <string name="txtlele">Ikan Lele</string>
     <string name="txtkikil">Kikil</string>
+    <string name="txtnasi">Nasi</string>
+    <string name="txtkerupuk">Kerupuk</string>
+    <string name="txtlalapan">Lalapan</string>
+    <string name="txtsambal">Sambal</string>
+    <string name="button_Submit">Submit</string>
 </resources>
