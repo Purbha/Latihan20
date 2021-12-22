@@ -16,7 +16,7 @@
     </style>
 
     <style name="textView_Style2" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textColor">@color/SeaGreen</item>
+        <item name="android:textColor">@color/DarkMagenta</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
@@ -35,6 +35,14 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold|italic</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="radio_Style1" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/MediumVioletRed</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:minHeight">48dp</item>
     </style>
 
 </resources>

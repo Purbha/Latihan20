@@ -17,6 +17,7 @@
     <string name="textView_Main_Sub1">Pilih Menu Makanan</string>
     <string name="textView_Main_Sub2">Pilih Level Pedas</string>
     <string name="textView_Main_Sub3">Tambahan</string>
+    <string name="ratingBar_Main_Pedas">Rating Pedas</string>
     <!--Result Activity-->
     <string name="textView_Result_Makan">Makanan</string>
     <string name="textView_Result_Harga1">Harga Makanan</string>
