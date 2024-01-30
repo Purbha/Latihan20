@@ -2,7 +2,6 @@ package com.ims.latihan20;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -41,30 +40,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Listen_B_Submit() {
-        B_Submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int Get_ID = Radio_RG.getCheckedRadioButtonId();
-                Radio_RB = findViewById(Get_ID);
-                if(Radio_RB == null){
-                    Toast.makeText(MainActivity.this, "Silakan pilih makanan.", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                String Makanan = Radio_RB.getText().toString();
-                float Pedas = RTB.getRating();
-                boolean Chk1_Val = Chk1.isChecked();
-                boolean Chk2_Val = Chk2.isChecked();
-                boolean Chk3_Val = Chk3.isChecked();
-                boolean Chk4_Val = Chk4.isChecked();
-                Intent In = new Intent(MainActivity.this, ResultActivity.class);
-                In.putExtra(Globalvar.EXTRA_MAKANAN, Makanan);
-                In.putExtra(Globalvar.EXTRA_PEDAS,Pedas);
-                In.putExtra(Globalvar.EXTRA_CHK1,Chk1_Val);
-                In.putExtra(Globalvar.EXTRA_CHK2,Chk2_Val);
-                In.putExtra(Globalvar.EXTRA_CHK3,Chk3_Val);
-                In.putExtra(Globalvar.EXTRA_CHK4,Chk4_Val);
-                startActivity(In);
+        B_Submit.setOnClickListener(v -> {
+            int Get_ID = Radio_RG.getCheckedRadioButtonId();
+            Radio_RB = findViewById(Get_ID);
+            if(Radio_RB == null){
+                Toast.makeText(MainActivity.this, "Silakan pilih makanan.", Toast.LENGTH_SHORT).show();
+                return;
             }
+            String Makanan = Radio_RB.getText().toString();
+            float Pedas = RTB.getRating();
+            boolean Chk1_Val = Chk1.isChecked();
+            boolean Chk2_Val = Chk2.isChecked();
+            boolean Chk3_Val = Chk3.isChecked();
+            boolean Chk4_Val = Chk4.isChecked();
+            Intent In = new Intent(MainActivity.this, ResultActivity.class);
+            In.putExtra(Globalvar.EXTRA_MAKANAN, Makanan);
+            In.putExtra(Globalvar.EXTRA_PEDAS,Pedas);
+            In.putExtra(Globalvar.EXTRA_CHK1,Chk1_Val);
+            In.putExtra(Globalvar.EXTRA_CHK2,Chk2_Val);
+            In.putExtra(Globalvar.EXTRA_CHK3,Chk3_Val);
+            In.putExtra(Globalvar.EXTRA_CHK4,Chk4_Val);
+            startActivity(In);
         });
     }
 

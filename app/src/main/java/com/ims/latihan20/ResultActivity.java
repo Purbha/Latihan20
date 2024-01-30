@@ -101,7 +101,7 @@ public class ResultActivity extends AppCompatActivity {
 
     private int Tambahan_Nasi(boolean Chk_Nasi) {
         int Nasi = 0;
-        if(Chk_Nasi == true){
+        if(Chk_Nasi){
             Nasi = 8000;
         } else {
             Nasi = 0;
@@ -111,7 +111,7 @@ public class ResultActivity extends AppCompatActivity {
 
     private int Tambahan_Kerupuk(boolean Chk_Kerupuk) {
         int Kerupuk = 0;
-        if(Chk_Kerupuk == true){
+        if(Chk_Kerupuk){
             Kerupuk = 3000;
         } else {
             Kerupuk = 0;
@@ -121,7 +121,7 @@ public class ResultActivity extends AppCompatActivity {
 
     private int Tambahan_Lalapan(boolean Chk_Lalapan) {
         int Lalapan = 0;
-        if(Chk_Lalapan == true){
+        if(Chk_Lalapan){
             Lalapan = 5000;
         } else {
             Lalapan = 0;
@@ -131,7 +131,7 @@ public class ResultActivity extends AppCompatActivity {
 
     private int Tambahan_Sambel(boolean Chk_Sambel) {
         int Sambel = 0;
-        if(Chk_Sambel == true){
+        if(Chk_Sambel){
             Sambel = 5000;
         } else {
             Sambel = 0;
@@ -141,19 +141,19 @@ public class ResultActivity extends AppCompatActivity {
 
     private String Tulisan_Tambahan(boolean Chk1, boolean Chk2, boolean Chk3, boolean Chk4) {
         String Tulisan = "";
-        if(Chk1 == true){
+        if(Chk1){
             Tulisan += "Nasi ";
         }
-        if(Chk2 == true) {
+        if(Chk2) {
             Tulisan += "Kerupuk ";
         }
-        if(Chk3 == true) {
+        if(Chk3) {
             Tulisan += "Lalapan ";
         }
-        if(Chk4 == true) {
+        if(Chk4) {
             Tulisan += "Sambel ";
         }
-        return  Tulisan;
+        return Tulisan;
     }
 
 }
